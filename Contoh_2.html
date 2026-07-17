@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mengatur tampilan agar sesuai dengan ukuran layar perangkat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Biodata</title>
+
+    <style>
+
+        /* Mengatur tampilan seluruh halaman */
+        body {
+            background-color: rgb(236, 148, 16);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Mengatur tampilan label */
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            
+        }
+
+        /* Mengatur tampilan input teks, email, tanggal, dan pilihan agama */
+        input[type='text'],
+        input[type='email'],
+        input[type='date'],
+        select {
+            width: 95%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid rgb(1, 9, 10);
+        }
+
+        /* Mengatur jarak radio button dan checkbox */
+        input[type='radio'],
+        input[type='checkbox'] {
+            margin-right: 5px;
+            margin-top: 8px;
+        }
+
+        /* Mengatur kotak utama/form */
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            background-color: rgb(239, 243, 241);
+            padding: 20px;
+            border-radius: 8px;
+            border: 3px solid rgb(16, 13, 165);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            background-image:url("langit.jpg");
+            color: white;
+        }
+
+        /* Mengatur tampilan tombol simpan */
+        button {
+            width: 100%;
+            background-color: rgb(1, 14, 17);
+            padding: 10px;
+            color: rgb(230, 234, 238);
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            border: none;
+        }
+
+        /* Efek ketika mouse berada di atas tombol */
+        button:hover {
+            background-color: rgba(0, 0, 0, 0.63);
+        }
+
+        /* Memberi jarak antar kelompok form */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Container utama untuk membungkus form -->
+    <div class="container">
+
+        <!-- Form biodata pengguna -->
+        <form action="" method="post" enctype="multipart/form-data">
+
+            <!-- Input nama -->
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" name="name" id="name" placeholder="Nama">
+            </div>
+
+
+            <!-- Input email -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+
+            <!-- Input tanggal lahir -->
+            <div class="form-group">
+                <label for="date">Tanggal lahir</label>
+                <input type="date" name="birth_date" id="date">
+            </div>
+
+
+            <!-- Pilihan jenis kelamin -->
+            <div class="form-group">
+                <label>Jenis Kelamin</label>
+
+                <input type="radio" name="gender" value="L" id="laki" required>
+                <label for="laki" style="display:inline;">Laki-laki</label>
+
+                <br>
+
+                <input type="radio" name="gender" value="P" id="perempuan">
+                <label for="perempuan" style="display:inline;">Perempuan</label>
+            </div>
+
+
+            <!-- Pilihan agama -->
+            <div class="form-group">
+                <label>Agama</label>
+
+                <select name="religion" required>
+                    <option value="" selected disabled>Pilih Agama Anda</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Kristen Katolik">Kristen Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+            </div>
+
+
+            <!-- Pilihan hobi -->
+            <div class="form-group">
+                <label>Hobi</label>
+
+                <label>
+                    <input type="checkbox" name="hobi[]" value="Menulis">
+                    Menulis
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hobi[]" value="Menari">
+                    Menari
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hobi[]" value="Melukis">
+                    Melukis
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hobi[]" value="Menggambar">
+                    Menggambar
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hobi[]" value="Coding">
+                    Coding
+                </label>
+
+            </div>
+
+
+            <!-- Tombol kirim form -->
+            <button type="submit">Simpan</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

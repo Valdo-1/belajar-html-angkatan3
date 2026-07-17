@@ -1,0 +1,66 @@
+
+
+    /* Mengatur tampilan seluruh halaman */
+    body {
+        background-color: rgb(236, 150, 36);
+
+        /* Memasang gambar sebagai background */
+        background-image: url("langit.jpg");
+
+        /* Membuat gambar memenuhi layar */
+        background-size: cover;
+
+        /* Membuat posisi gambar berada di tengah */
+        background-position: center;
+
+        /* Mencegah gambar mengulang */
+        background-repeat: no-repeat;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    /* Mengatur tampilan tabel */
+    table {
+        width: 100%;
+
+        /* Menggabungkan garis tabel agar tidak terpisah */
+        border-collapse: collapse;
+
+        /* Memberikan efek bayangan */
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+
+    /* Mengatur bagian isi tabel */
+    td {
+        padding: 10px;
+
+        /* Posisi teks rata kiri */
+        text-align: left;
+
+        /* Membuat garis tabel */
+        border: 1px solid rgb(100,100,100);
+
+        /* Warna kotak isi tabel */
+        background-color: rgba(240,248,255,0.8);
+    }
+
+
+    /* Mengatur bagian judul tabel */
+    th {
+        padding: 10px;
+
+        /* Warna background judul */
+        background-color: rgb(89,72,185);
+
+        /* Warna tulisan */
+        color: white;
+
+        /* Membuat tulisan berada di tengah */
+        text-align: center;
+
+        /* Membuat garis tabel */
+        border: 1px solid rgb(100,100,100);
+    }
+

@@ -1,0 +1,102 @@
+body,
+html{
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  height: 100%;
+}
+
+.navbar {
+  background-color: rgba(32, 30, 30, 0.7);
+  color: rgb(68, 53, 53);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  padding: 15px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  
+  
+}
+.logo{
+    margin-right: 500px;
+    color: white;
+
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(32, 31, 31);
+  font-weight: bold;
+  transition: 0.3s;
+    list-style: none;
+    gap: 30px;
+}
+
+
+nav a:hover {
+  color: rgb(130, 248, 248);
+}
+
+/* .bg-1{
+    background-image: url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070);
+} */
+.home{
+    height:100%;
+    background-image: url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070);
+    text-align: center;
+    padding: 60px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.profile{
+ margin-top: 200px;
+}
+.content{
+    background-color: rgb(0, 0, 0,0.7);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 65%;
+    
+}
+
+.home img{
+   
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.home h1{
+    color: #f0efef;
+    margin-bottom: 10px;
+}
+
+.home p{
+    color: #ebe8e8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .parallax{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+} */
