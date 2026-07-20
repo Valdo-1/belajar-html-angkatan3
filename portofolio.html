@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,116 @@
 
     <link rel="stylesheet" href="style-portofolio.css">
 </head>
+
 <body>
 
     <header class="navbar">
-        <h2 class="logo">MyPortfolio</h2>
-        <nav>
-            <a href="home">Home</a>
-            <a href="about">About</a>
-            <a href="ability">Ability</a>
-            <a href="contact">Kontak</a>
-        </nav>
+        <div class="nav-container">
+            <h2 class="logo">MyPortfolio</h2>
+            <button onclick="toggleMenu()">☰</button>
+            <nav id="menu">
+                <a href="#home">Home</a>
+                <a href="#ability">Ability</a>
+                <a href="#about">About</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+        </div>
+
 
     </header>
-  <section class="home" id="home">
-    <div class="content"></div>
-    <div class="profile"><img src="ppkd.jpeg" alt="Profile"></div>
-     
-    <div><h1>Muhammad Osvaldo Rios</h1>
-        <p>Web Developer</p></div>
-        
-        
+    <section class="home bg-1" id="home">
+        <div class="content">
+            <h1>Muhammad Osvaldo Rios</h1>
+            <img class="img-profile" src="ppkd.jpeg" alt="Profile">
+            <p>Web Developer</p>
+        </div>
+
+    </section>
+    <section id="ability" class="normal-section">
+        <div class="container">
+            <h2>Keahlian Saya</h2>
+            <div class="wraper">
+                <div class="ability">
+                    <h3> My Skills</h3>
+                    <ul>
+
+                        <li>CSS</li>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>Phyton</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+
+                <div class="ability">
+                    <h3> My Experience</h3>
+                    <ul>
+                        <li>Belajar Di ppkd</li>
+                        <li>Menjadi Leader Security</li>
+                        <li>Bekerja di First Media</li>
+                        <li>Lulusan PNJ</li>
+                        <li>DLL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="home bg-2">
+        <div class="content">
+            <h2>Tentang Saya</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8kFpXyaBhvTp0SZpUHkNrJbsNnrRNys-ajRhfkJWysw&s=10"
+                        alt="">
+                    <figcaption>gambar 1</figcaption>
+                </figure>
+
+                <figure><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST_ZSWhYj1OcLoWCGCbxKt3KUxEBVV-zThZwJy2nMfdQ&s=10"
+                        alt="">
+                    <figcaption>gambar 2</figcaption>
+                </figure>
+
+                <figure><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzMiEY5pdYfYCX6gJCtYLt6e-fdy5AYw6FL_cxpwG9TY8DXvV56q2VGon3&s=10"
+                        alt="">
+                    <figcaption>gambar 3</figcaption>
+                </figure>
+
+                <figure><img
+                        src="https://asset.tribunnews.com/DPrWdHYkJa42StbIUYh0g7HgmLw=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/medan/foto/bank/originals/Contoh-gambar.jpg"
+                        alt="">
+                    <figcaption>gambar 4</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section id="Contact" class="normal-section">
+        <h2>Kontak</h2>
+        <form action="" method="post" class="Contact-form">
+
+            <input type="text" placeholder="Nama">
+
+            <input type="email" placeholder="ex:example@gmail.com">
+
+            <textarea placeholder="Pesan"></textarea>
+
+            <button>Kirim</button>
+
+        </form>
+
+
+
     </section>
 
+<script>
+    function toggleMenu(){
+        document.getElementById("menu").classList.toggle("show");
+    }
+</script>
+
+
+
 </body>
+
 </html>
